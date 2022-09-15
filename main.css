@@ -1,3 +1,12 @@
+select {
+  appearance: none;
+}
+input,
+select,
+body {
+  outline: none;
+  font-family: "Raleway", sans-serif;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -5,7 +14,6 @@ header {
   padding: 20px;
 }
 body {
-  font-family: "Raleway", sans-serif;
   color: #213053;
   margin: 0;
 }
@@ -20,8 +28,7 @@ header a {
   font-size: 15px;
   font-weight: 600;
 }
-header button,
-.about button {
+button {
   font-family: "Raleway", sans—serif;
   font-size: 15px;
   color: #fff;
@@ -31,6 +38,12 @@ header button,
   cursor: pointer;
   box-shadow: 0 16px 36px rgb(52 213 68 / 22%);
   padding: 15px;
+  transition: background-color 0.3s ease-in, box-shadow 0.3s ease-in;
+}
+button:hover {
+  background-color: #f6980c;
+  box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
+  transition: background-color 0.3s ease-in, box-shadow 0.3s ease-in;
 }
 .header__controls {
   display: flex;
@@ -80,4 +93,92 @@ header button,
 .about__info {
   max-width: 475px;
   padding-left: 7px;
+}
+.form {
+  background-color: #1d263a;
+  padding: 115px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.form h1 {
+  font-size: 48px;
+}
+.form p {
+  font-size: 18px;
+  opacity: 0.65;
+}
+.form__container {
+  width: 550px;
+}
+.form__container form {
+  padding-top: 45px;
+}
+.form__group {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 124px 124px 124px 160px 60px;
+  /* grid-gap: 20px 30px; */
+  /* align-items: flex-start; */
+}
+.form__group label {
+  text-align: left;
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.form__group input,
+.form__budget {
+  height: 59px;
+  border-radius: 15px;
+  border: none;
+  font-size: 18px;
+  padding: 0px 21px;
+  /* font-weight: 600; */
+  /* text-align: center; */
+}
+.form__elem {
+  display: flex;
+  flex-direction: column;
+}
+.form__budget {
+  font-size: 17.5px;
+  /* padding: 0px 17px; */
+}
+
+.form__group button {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+footer {
+  padding: 90px 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.footer__copyright {
+  /* display: flex; */
+  /* justify-content: center; */
+  text-align: center;
+  padding-right: 40px;
+  opacity: 0.5;
+  grid-column: 1/4;
+}
+.footer__container {
+  width: 830px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 220px 410px 200px;
+  grid-template-rows: 213px 50px;
+  /* font-weight: bold; */
+}
+.footer__group h3,
+a {
+  font-size: 16px;
+  line-height: 33px;
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
 }
